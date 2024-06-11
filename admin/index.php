@@ -3,6 +3,9 @@ include "header.php";
 if(isset($_GET['art'])){
     $art = $_GET['art'];
     switch($art){
+        case 'listdm':
+            include "danhmuc/list.php";    
+            break;
         case 'adddm':
             include "danhmuc/add.php";    
             break;

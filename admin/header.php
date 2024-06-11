@@ -24,7 +24,7 @@
                     <ul>
                         <li><a href="index.php">Sản phẩm</a></li>
                         <li><a href="">Đơn hàng</a></li>
-                        <li><a href="index.php?art=adddm">Danh mục</a></li>
+                        <li><a href="index.php?art=listdm">Danh mục</a></li>
                         <li><a href="">Nhà cung cấp</a></li>
                         <li><a href="index.php?art=listKH">Khách hàng</a></li>
                         <li><a href="">Nhân viên</a></li>

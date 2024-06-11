@@ -10,7 +10,7 @@
                 </a>
             </div>
             <?php 
-                            require "connect.php";
+                            require 'frontend/connect.php';
                             
                             $sql = "SELECT * FROM danh_muc"; 
                             $result = $conn->query($sql);
@@ -25,7 +25,7 @@
                             </div>';
                                 }
                             }
-                            ?>
+                        ?>
 
         </div>
     </div>
@@ -51,13 +51,13 @@
         </div>
 
         <?php 
-                            require "connect.php";
+                            require 'frontend/connect.php';
                             $sql = "SELECT * FROM tbl_sanpham"; 
                             $result = $conn->query($sql);
                             if ($result->num_rows > 0) {
                                 while($row = $result->fetch_assoc()) {
                                     $img = $img_load .$row["imgSP"]; 
-                                    echo '<a href="Procduct_details.php?MaSP='.$row["MaSP"].'">
+                                    echo '<a href="view.php?art=ChiTiet&MaSP=' . $row["MaSP"] . '">
                                     <div class="content-procduct-box">
                                         <img src="'. $img .'"  alt="" /> 
                                             <div class="content-procduct-box-info">

@@ -6,10 +6,10 @@
                 <input type="text" id="tenDM" name="tenDM" required />
                 <label for="">Loại danh mục:</label>
                 <select id="loaiDM" name="loaiDM" required>
-                    <option value="ao">Áo</option>
-                    <option value="quan">Quần</option>
-                    <option value="ao_khoac">Áo khoác</option>
-                    <option value="phu_kien">Phụ kiện</option>
+                    <option value="Áo">Áo</option>
+                    <option value="Quần">Quần</option>
+                    <option value="Áo khoác">Áo khoác</option>
+                    <option value="Phụ kiện">Phụ kiện</option>
                 </select>
                 <label for="">Ảnh danh mục:</label>
                 <input type="file" id="imgDM" name="imgDM" style="border: none" />

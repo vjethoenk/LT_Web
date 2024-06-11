@@ -6,7 +6,16 @@ if(isset($_GET['art'])){
     $art = $_GET['art'];
     switch($art){
         case 'sp':
-            include "frontend/DsSP.php";    
+            include "frontend/SanPham/DsSP.php";    
+            break;
+        case 'ChiTiet':
+            include "frontend/SanPham/ChiTietSP.php";    
+            break;
+        case 'user':
+            include "frontend/UserKH/dangnhap.php";    
+            break;
+        case 'dk':
+            include "frontend/UserKH/dangki.php";    
             break;
         default:
             include "frontend/home.php";

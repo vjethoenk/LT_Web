@@ -28,10 +28,10 @@
 
                                     if ($result->num_rows > 0) {
                                         $LoaiDM = [
-                                            'ao' => [],
-                                            'quan' => [],
-                                            'ao_khoac' => [],
-                                            'phu_kien' => []
+                                            'Áo' => [],
+                                            'Quần' => [],
+                                            'Áo khoác' => [],
+                                            'Phụ kiện' => []
                                         ];
                                         while($row = $result->fetch_assoc()) {
                                             $LoaiDM[$row['loaiDM']][] = $row;
@@ -59,6 +59,17 @@
                 <div class="right-procduct-tool-price">
                     <label for="">Giá tiền</label> <br />
                     <input type="text" id="Gia" name="Gia" />
+
+                    <script>
+                    document.getElementById("Gia").addEventListener("input", function(e) {
+                        let value = e.target.value;
+                        value = value.replace(/[^0-9]/g, "");
+                        if (value !== "") {
+                            value = parseInt(value).toLocaleString("vi-VN");
+                        }
+                        e.target.value = value;
+                    });
+                    </script>
                 </div>
                 <button class="btnThem" name="btnThem">Thêm</button>
                 <?php 

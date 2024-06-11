@@ -82,11 +82,11 @@
                                 src="https://file.hstatic.net/200000642007/file/icon-search_f3577f42c6314038a0636c20100bd8d9.svg" /></a>
                     </div>
                     <div class="header-tool-cart">
-                        <a href="#"><img
+                        <a href="view.php?art=giohang"><img
                                 src="https://file.hstatic.net/200000642007/file/icon-cart_d075fce117f74a07ae7f149d8943fc33.svg" /></a>
                     </div>
                     <div class="header-tool-acc">
-                        <a href="#"><img
+                        <a href="view.php?art=user"><img
                                 src="https://file.hstatic.net/200000642007/file/icon-account_5d386c88832c4872b857c0da62a81bbc.svg" /></a>
                     </div>
                 </div>
